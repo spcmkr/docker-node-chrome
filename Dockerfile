@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get -y update \
-      && apt-get -y install curl wget
+      && apt-get -y install curl wget bzip2
 
 # Node.js
 
