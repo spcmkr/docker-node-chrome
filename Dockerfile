@@ -1,4 +1,7 @@
-FROM openjdk:8-jdk
+FROM ubuntu:16.04
+
+RUN apt-get -y update \
+      && apt-get -y install curl wget
 
 # Node.js
 
@@ -30,5 +33,5 @@ RUN apt-get -y update \
 # Firefox
 
 RUN apt-get -y update \
-    && apt-get -y install firefox-esr
+    && apt-get -y install firefox
 
