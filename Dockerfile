@@ -49,3 +49,8 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v$GECKO_DRIVER
   && rm geckodriver-v$GECKO_DRIVER_VERSION-linux64.tar.gz \
   && chmod +x geckodriver \
   && mv geckodriver /usr/local/bin/
+
+# MongoDB Client
+RUN apt-get -y update \
+  && apt-get -y install mongodb-clients
+
