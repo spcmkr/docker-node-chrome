@@ -35,11 +35,18 @@ RUN apt-get -y update \
 RUN apt-get -y update \
     && apt-get -y install firefox
 
+# OpenJDK
+
+RUN apt-get -y update \
+    && apt-get -y install openjdk-8-jre
+
 # Angular webdriver-manager
+
 RUN npm install -g webdriver-manager \
     && webdriver-manager update
 
 # MongoDB Client
+
 RUN apt-get -y update \
   && apt-get -y install mongodb-clients
 
