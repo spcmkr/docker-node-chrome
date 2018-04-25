@@ -34,7 +34,7 @@ RUN apt-get -y update \
 
 RUN apt-get -y update \
     && apt-get -y install firefox \
-    && mkdir -p /root/.cache/dconf
+    && mkdir -p /root/.cache/dconf \
     && chmod 777 /root/.cache/dconf
 
 # OpenJDK
